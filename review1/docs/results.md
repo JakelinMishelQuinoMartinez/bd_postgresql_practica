@@ -1,10 +1,27 @@
 
-# Resultados de Ejercicios SQL - Tabla Estudiantes
+# Resultados de Ejercicios SQL - SELECT
 
 ## Estructura de la Tabla
 
 Antes de ejecutar las consultas, se creo la base de datos `campers`, la tabla `estudiantes` y se le insertaron 50 filas de datos.
-
+```sql
+CREATE DATABASE campus;
+-- \c campus
+CREATE TABLE estudiantes (
+   id SERIAL,
+   nombre VARCHAR(60),
+   edad INT,
+   genero CHAR(1),
+   promedio FLOAT,
+   altura NUMERIC(3,2),
+   fecha_ingreso DATE,
+   hora_ingreso  TIME,
+   fecha_hora_registro TIMESTAMP,
+   duración_tests INTERVAL,
+   analisis_perfil TEXT,
+   activo BOOLEAN
+);
+```
 ![Creación de la base de datos y tabla](evidences/create_bd_table.png)
 ![Insert 50 rows](evidences/insert.png)
 
